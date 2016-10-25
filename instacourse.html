@@ -1,0 +1,84 @@
+<!-- Mollee Jain, Serry Park and Selina Sotomayor --> 
+<!-- instacourse.html --> 
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML lang="en">
+<head>
+    <title>Cal Pal</title>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>		
+    <link id="index-style" rel="stylesheet" type="text/css" href="instacourse.css">
+    
+</head>
+
+
+<h1>welcome to calpal</h1>
+
+
+<p> {message} </p>
+<form>
+ <fieldset class={hidden}>
+    <legend style="font-size: 30px">  Enter your Banner number to log in or sign up </legend>
+    <p> If you are a first time user, enter your B number and you will automatically be signed up.  Otherwise, enter your B number to log in. </p> 
+<center>
+    <table>
+      <tr><td><label for="bNum" accesskey="i">B Number: </label></td><td><input type="text" name="loginbNum"  id="loginbNum">
+  </table>
+    <input type="submit" name="login" value="Login">
+    <input type="hidden" name = "bNum" value = {bNum}>
+</center>
+</fieldset>
+<p> {loginMessage} </p>
+
+  <fieldset>
+    <legend style="font-size: 30px">  Look up courses by a CRN </legend>
+    <p> Don't know where to find your course CRNs? Go to the <a href="https://courses.wellesley.edu/"> Wellesley Course Browser </a> to find courses you are interested in! </p>
+<p>
+<ul> 1. To start type in a CRN and hit 'Submit'. </ul>
+<ul> 2. You can then select 'Add Data' to add the course to your calendar.</ul>
+<ul> 3. To delete a course from your calendar, type in the CRN of the course, hit 'Submit' followed by 'Delete Data'.</ul> </p>
+<center>
+    <table>
+      <tr><td><label for="crn" accesskey="i">CRN: </label></td><td><input type="text" name="crn"  id="crn">
+  <input type="submit" name = "submit" value="Submit">
+</table>
+  <input type="hidden" name = "savedcrn" value = {savedcrn}>
+
+<p> {courselist} </p>
+<p id = "test"> </p>
+
+    <input type="submit" name="add" value="Add Data">
+    <input type="submit" name="delete" value="Delete Data">
+<p> {schedule} </p>
+</center>   
+</fieldset>
+
+</form>
+<br>
+<fieldset>
+<legend> Screenshot your CalPal! </legend>
+<p> **  Scroll down to see a list of your added courses  ** </p>
+<p style="font-size:16px"> NOTE:  If you have conflicting courses, only one of the courses will display on CalPal.  
+<br>To see full list of courses (including conflicts), check the list below the CalPal! </p>
+<br>
+<center>
+<div id = "calendar" style="background-image: url(weekly_calendar2.jpg); height: 504px; width: 669px;">
+{schedBlock}
+</div> </center>
+
+<center> <div style="font-family: 'Yanone Kaffeesatz', sans-serif; font-weight: 200; font-size: 20px"> {curCourses} </div> </center>
+<br>
+</fieldset>
+<br>
+<hr style="border:dashed 1px #800">
+<footer>
+<br>
+<div> 
+
+<!--div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div-->
+<p style=  "text-align:center"> Created by the CalPal team: Mollee Jain '16 , Serry Park '16, Selina Sotomayor '16</p>
+<center> <img src = "./clock.png" alt = "icon" style = "width:4%;"></center>
+</div>
+</footer>
+</body>
+</html>
