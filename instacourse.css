@@ -1,0 +1,103 @@
+/* CSS Style Sheet for CalPal
+* Author: CalPal 
+Color palette: http://www.colourlovers.com/palette/2096818/Thalassa_Amaranth
+*/
+
+/* style elements */ 
+body {
+	/*background-color: rgba(176,224,230,0.4);  in case image doesn't load */
+    background-color: #fff;
+}
+
+h1	{		
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 80px;
+	font-weight: 200;
+	text-transform:uppercase;
+	margin: 10px auto;
+	text-align: center;
+	color: #800;
+}
+
+h2,legend {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 30px;
+	font-weight: 200;
+	margin: 10px auto;
+	text-align: center;
+	background-color: rgba(176,224,230,1)
+}
+
+h3 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 50px;
+	font-weight: 300;
+	color: #000;
+	padding-left: 10px;
+}
+
+/* paragraph */
+p,li {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 18px;
+	font-weight:200;
+	margin: 10px auto;
+	text-align: center;
+}
+
+ul {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 16px;
+    font-weight:200;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* horizonantal break */
+hr {
+	color: #000; /* maroon */
+	border-style: solid;
+	border-width:1px;
+	padding: 0px;
+	margin: 0px;
+}
+
+fieldset {
+text-align: center;
+background-color:rgba(176,224,230,0.4);
+}
+
+table {
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size: 16px;
+}
+fieldset.hidden {
+    display:none;
+}
+
+input[type=submit] {
+   background-color: #fff;
+   transition-duration: 0.4s;
+   border: solid 1px rgb(176,224,230);
+}
+
+input:hover[type=submit] {
+   background-color: rgb(176,224,230);
+   color: #000;
+   border: solid 1px #fff;
+
+}
+
+div#calendar {
+    position: relative;
+}
+div.block {
+    border: solid 2px rgb(252, 136, 64);
+    position: absolute;
+    font-size: 10px;
+    width: 86px;
+    background: rgb(255,181,96);
+    font-family:  'Slabo 27px',serif;
+    text-align: center;
+}
+
